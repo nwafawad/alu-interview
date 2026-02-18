@@ -24,5 +24,5 @@ def minOperations(n):
             operations += divisor
             n = n // divisor
         # Check the next number
-        divisor += 1 
+        divisor += 1
     return operations
