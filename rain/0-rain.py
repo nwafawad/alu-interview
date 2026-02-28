@@ -9,7 +9,7 @@ def rain(walls):
     if not walls:
         return 0
 
-    n = len(walls) 
+    n = len(walls)
 
     # Initialize two lists
     left_max = [0] * n
