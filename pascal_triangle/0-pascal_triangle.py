@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-0-pascal_triangle"""
+0-pascal_triangle
+"""
+
 
 def pascal_triangle(n):
     """
@@ -11,16 +13,12 @@ def pascal_triangle(n):
 
     # Initialize the triangle with the first row
     triangle = []
-
     for i in range(n):
         # Create a row of length i+1 filled with 1s
-        row = [1] * (i + 1)
-        
+        row = [1] * (i + 1)        
         # Calculate the inner values of the row based on the previous row
         # (We skip the first and last elements since they remain 1)
         for j in range(1, i):
             row[j] = triangle[i-1][j-1] + triangle[i-1][j]
-            
         triangle.append(row)
-
     return triangle
